@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" type="text/css" href="css/chmeleon.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
   <script>
     WebFont.load({
       google: {
@@ -69,7 +71,7 @@ window.fbAsyncInit = function() {
   </div>
   <div class="w-clearfix section hero">
     <div class="w-container container">
-      <h1>Experience in color.</h1>
+      <h1>Experience life in color.</h1>
       <div class="w-form sign-up-form">
         <form class="w-clearfix" name="wf-form-signup-form" data-name="Signup Form" data-redirect="/success">
           <input class="w-input field" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
@@ -189,8 +191,11 @@ window.fbAsyncInit = function() {
     </div>
   </div>
   <div class="section grey"></div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type='text/javascript'>
+    $('a, buttons, inputs').bind('mousedown', function(e) {
+      e.preventDefault();
+    })
+  </script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>
