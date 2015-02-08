@@ -56,7 +56,7 @@ p {
   margin-bottom: 5px;
   padding-right: 60px;
   padding-left: 60px;
-  color: rgba(0, 0, 0, 0.40);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 23px;
   line-height: 30px;
   font-weight: 300;
@@ -158,9 +158,10 @@ p {
   padding: 0px 70px;
 }
 .social-section {
+  display: block;
   padding-top: 58px;
   padding-bottom: 58px;
-  background-color: #7fb830;
+  background-color: #b5c7c6;
   color: #b80000;
   text-align: center;
 }
@@ -226,15 +227,16 @@ p {
   margin-bottom: 1px;
   padding-top: 34px;
   padding-bottom: 40px;
-  background-color: #fafafa;
+  background-color: white;
   text-align: center;
 }
 .section.hero {
-  margin-bottom: -8px;
-  padding-top: 92px;
-  padding-bottom: 90px;
-  background-image: -webkit-linear-gradient(rgba(107, 107, 107, 0.84), rgba(0, 97, 189, 0.24) 0%), url('../images/8850648-green-chameleon.jpg');
-  background-image: linear-gradient(rgba(107, 107, 107, 0.84), rgba(0, 97, 189, 0.24) 0%), url('../images/8850648-green-chameleon.jpg');
+  margin-top: 0px;
+  margin-bottom: -62px;
+  padding-top: 76px;
+  padding-bottom: 143px;
+  background-image: -webkit-linear-gradient(rgba(107, 107, 107, 0.84), rgba(0, 189, 167, 0.78) 0%), url('../images/8850648-green-chameleon.jpg');
+  background-image: linear-gradient(rgba(107, 107, 107, 0.84), rgba(0, 189, 167, 0.78) 0%), url('../images/8850648-green-chameleon.jpg');
   background-position: 0% 0%, 0% 22%;
   background-size: auto, cover;
   opacity: 1;
@@ -245,16 +247,19 @@ p {
 }
 .section.grey {
   margin-top: 2px;
-  margin-bottom: -43px;
+  margin-bottom: 22px;
   padding-top: 39px;
   padding-bottom: 85px;
-  background-color: white;
+  background-color: #fcfcfc;
 }
 .grey-heading {
-  margin: -6px -28px 18px 48px;
-  padding: 24px 0px 0px 1px;
+  display: inline-block;
+  margin: 5px 12px 24px 48px;
+  padding: 24px 1px 0px 0px;
   float: left;
   color: rgba(0, 0, 0, 0.56);
+  font-size: 48px;
+  font-weight: 400;
   text-align: center;
   text-shadow: none;
 }
@@ -374,6 +379,49 @@ p {
   padding-bottom: 0px;
   box-shadow: rgba(255, 255, 255, 0.23) 0px 0px 0px 10px;
   text-shadow: none;
+}
+.firstexample {
+  display: inline-block;
+  width: 370px;
+  padding-left: 0px;
+}
+.how-it-works {
+  display: block;
+}
+.example1 {
+  margin: 25px 40px 0px 64px;
+  padding-bottom: 0px;
+}
+.example2 {
+  width: 650px;
+  margin-top: 23px;
+  padding-bottom: 1px;
+}
+.buttons {
+  margin-top: 30px;
+}
+.download {
+  margin-left: 15px;
+}
+.button-container {
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 0px;
+}
+.ex1 {
+  width: 370px;
+  padding-top: 10px;
+}
+.ex {
+  width: 650px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+.ex2 {
+  padding-top: 45px;
+}
+.howitworks {
+  margin-bottom: 25px;
 }
 @media (max-width: 991px) {
   h1 {
