@@ -24,41 +24,6 @@
         <script type="text/javascript" src="js/modernizr.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
         <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
-        <script src="//www.parsecdn.com/js/parse-1.3.4.min.js"></script>
-        <script type="text/javascript">
-            // Initialize the Parse object first.
-            Parse.initialize("phogAyiD3WBjR70PSBRlxQOOjEOKoG6LiqPF4ALK", "w8RawY6IS4swZ3wZGc3ac6jkWog61q9HhTydjVxu");
-
-            WINDOW.fbAsyncInit = function() {
-                Parse.FacebookUtils.init({
-                    appId      : '417466488409699',
-                    status     : true,
-                    cookie     : true,
-                    xfbml      : true
-                });
-                Parse.FacebookUtils.logIn(null, {
-                    success: function(user) {
-                        if (!user.existed()) {
-                            alert("User SIGNED UP and logged in through Facebook!");
-                        } else {
-                            alert("User logged in through Facebook!");
-                        }
-                    },
-                    error: function(user, error) {
-                        alert("User cancelled the Facebook login or did not fully authorize.");
-                    }
-                });
-            };
-
-            (function(d){
-                var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-                if (d.getElementById(id)) {return;}
-                js = d.createElement('script'); js.id = id; js.async = true;
-                js.src = "//connect.facebook.net/en_US/all.js";
-                ref.parentNode.insertBefore(js, ref);
-            }(document));
-        </script>
-        </script>
     </head>
     <body>
         <div class="navbar">
@@ -76,107 +41,13 @@
         <div class="w-clearfix section hero">
             <div class="w-container container">
                 <h1>Experience life in color.</h1>
-                <div class="w-form sign-up-form">
-                    <form class="w-clearfix" name="wf-form-signup-form" data-name="Signup Form" data-redirect="/success">
-                        <input class="w-input field" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
-                        <input class="w-button button" type="submit" value="Get an invite" data-wait="Please wait...">
-                    </form>
-                    <div class="w-form-done success-message">
-                        <p>Thanks! You'll be the first to know.</p>
-                        <p class="spread-word">Help spread the word!</p>
-                        <div class="w-clearfix social-widget-wrapper">
-                            <div class="w-widget w-widget-twitter social-widget">
-                                <iframe src="https://platform.twitter.com/widgets/tweet_button.html#url=http%3A%2F%2Fwebflow.com&amp;counturl=webflow.com&amp;text=Check%20out%20this%20site&amp;count=horizontal&amp;size=m&amp;dnt=true" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 110px; height: 20px;"></iframe>
-                            </div>
-                            <div class="w-widget w-widget-facebook social-widget">
-                                <a href="#" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 90px; height: 20px;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-form-fail error-message">
-                    <p>Oops! Something went wrong while submitting the form. :(</p>
-                    </div>
-                </div>
+
                 <div class="descrip">The simplest way to create meaningful
                 <br>objects and actions using color.</div>
             </div>
             <a class="button" href="http://www.facebook.com" TARGET="_blank">Button Text</a>
             <a class="w-inline-block" href="#"><img class="fb-login" src="images/FB login.png" alt="54d6e55cac8c83601ea3eb62_FB%20login.png">
             </a>
-        </div>
-        <div class="section grey" data-anchor="slide1">
-            <div class="w-container">
-                <h2 class="grey-heading">1. Choose a color</h2>
-            </div>
-            <div class="w-form">
-                <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
-                    <select class="w-select selectcolor" id="Choose-color" name="Choose-color" data-name="Choose color" multiple="multiple" required="required">
-                        <option value="">Red</option>
-                        <option value="First">Green</option>
-                        <option value="Second">Second Choice</option>
-                        <option value="Third">Third Choice</option>
-                    </select>
-                </form>
-                <div class="w-form-done">
-                    <p>Thank you! Your submission has been received!</p>
-                </div>
-                <div class="w-form-fail">
-                    <p>Oops! Something went wrong while submitting the form :(</p>
-                </div>
-            </div>
-            <div class="w-tabs" data-duration-in="300" data-duration-out="100"></div>
-            <div class="w-container">
-                <div class="square1"><a class="button" href="#">Button Text</a>
-                </div>
-            </div>
-            <div></div>
-        </div>
-        <div class="w-clearfix section">
-            <div class="w-container set-value">
-                <h2 class="grey-heading">2. Set a value&nbsp;</h2>
-            </div>
-            <div class="w-form w-clearfix formwrapper">
-                <form class="form" id="email-form" name="email-form" data-name="Email Form">
-                    <div class="w-radio w-clearfix object">
-                        <input class="w-radio-input" id="Object" type="radio" name="Object" value="Object" data-name="Object" data-ix="new-interaction">
-                        <label class="w-form-label object" for="Object">Object</label>
-                    </div>
-                    <div class="w-radio w-clearfix radiofield">
-                        <input class="w-radio-input actionselect" id="Action" type="radio" name="Object" value="Action" data-name="Object">
-                        <label class="w-form-label actiontext" for="Action">Value</label>
-                    </div>
-                </form>
-                <div class="w-form-done">
-                    <p>Thank you! Your submission has been received!</p>
-                </div>
-                <div class="w-form-fail">
-                    <p>Oops! Something went wrong while submitting the form :(</p>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="w-container set-value">
-                <h2 class="grey-heading">3. Bring it to life!</h2>
-            </div>
-            <div class="w-form">
-                <form id="email-form-3" name="email-form-3" data-name="Email Form 3">
-                    <select class="w-select selectcolor" id="Choose-color" name="Choose-color" data-name="Choose color" required="required">
-                        <option value="">Select one...</option>
-                        <option value="First">First Choice</option>
-                        <option value="Second">Second Choice</option>
-                        <option value="Third">Third Choice</option>
-                    </select>
-                </form>
-                <form class="w-clearfix" id="email-form-3" name="email-form-3" data-name="Email Form 3">
-                    <input class="w-button submit" type="submit" value="Submit" data-wait="Please wait...">
-                </form>
-                <div class="w-form-done">
-                    <p>Thank you! Your submission has been received!</p>
-                </div>
-                <div class="w-form-fail">
-                    <p>Oops! Something went wrong while submitting the form :(</p>
-                </div>
-            </div>
         </div>
         <div class="social-section">
             <div class="w-container">
